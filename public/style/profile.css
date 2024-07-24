@@ -1,0 +1,119 @@
+html,
+body {
+    background-image: url("/img/login-register/bg.jpg");
+    height: 100%; /* Pastikan body mengambil seluruh tinggi viewport */
+    margin: 0;
+}
+
+input {
+    width: 40rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.absolute-alert {
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: auto;
+    max-width: 90%;
+}
+
+.wrapper-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.vw-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 0 2rem 0 0;
+    border-radius: 2rem;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #1c54dc;
+}
+
+.img-prof-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.img-profile {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.photo-option {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.upload-photo {
+    background-color: white;
+}
+
+.delete-photo {
+    background-color: white;
+}
+
+.button-photo {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.button-photo:hover {
+    background-color: gainsboro;
+}
+
+.account-detail {
+    background-color: bisque;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.button-details {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.button-save {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

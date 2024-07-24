@@ -1,0 +1,22 @@
+/* Mengatur gaya untuk elemen dengan class .shoes-content */
+.shoes-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mengatur gaya untuk elemen dengan class .shoes-other */
+.shoes-other {
+    display: flex;
+    justify-content: center;
+}
+
+/* Mengatur gaya untuk elemen dengan class .quot */
+.quot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    font-weight: 500;
+}

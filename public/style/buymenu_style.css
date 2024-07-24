@@ -1,0 +1,356 @@
+/* Mengatur margin dan padding untuk semua elemen menjadi 0, 
+   serta menggunakan box-sizing border-box untuk mengikutsertakan padding dan border dalam ukuran elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur gaya untuk elemen dengan class .h1-class */
+.h1-class {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Mengatur gaya untuk elemen dengan class .li-class */
+.li-class {
+    font-weight: 500;
+}
+
+/* Mengatur padding dan margin atas untuk elemen dengan class .wrapper-all */
+.wrapper-all {
+    padding: 0 5rem;
+    margin-top: 6rem;
+}
+
+/* Mengatur gaya untuk elemen dengan class .navbar-wrapper */
+.navbar-wrapper {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: row; /* Mengatur arah flex menjadi baris */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+    background-color: #b99470; /* Mengatur warna latar belakang */
+    padding: 1rem; /* Mengatur padding */
+    gap: 1rem; /* Mengatur jarak antar item */
+    position: fixed; /* Menetapkan posisi tetap di bagian atas */
+    top: 0;
+    width: 100%;
+    z-index: 9999999999999999999999999999999999999999999999999999999999999999999999; /* Menetapkan z-index sangat tinggi */
+}
+
+.backlogo-wrapper {
+    display: flex;
+}
+
+/* Mengatur maksimal lebar gambar logo belakang */
+.backlogo {
+    margin-left: 10px;
+    justify-content: center;
+    max-width: 50%;
+}
+
+/* Mengatur gaya untuk elemen dengan class .johnsonlogo-wrapper */
+.johnsonlogo-wrapper {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: row; /* Mengatur arah flex menjadi baris */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+    font-size: 10px; /* Mengatur ukuran font */
+    gap: 1rem; /* Mengatur jarak antar item */
+}
+
+/* Mengatur border radius dan maksimal lebar gambar logo Johnson */
+.johnsonlogo {
+    border-radius: 60%;
+    max-width: 15%;
+}
+
+.athleticalogo {
+    border-radius: 60%;
+    max-width: 9.3%;
+}
+
+.aerostreetlogo {
+    border-radius: 60%;
+    max-width: 5.6%;
+}
+
+.compass {
+    border-radius: 60%;
+    max-width: 9.2%;
+}
+
+/* Mengatur gaya untuk elemen dengan class .content-section */
+.content-section {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: row; /* Mengatur arah flex menjadi baris */
+    gap: 2rem; /* Mengatur jarak antar item */
+    margin-top: 1.5rem; /* Mengatur margin atas */
+}
+
+/* Mengatur gaya untuk elemen dengan class .slideshow-container */
+.slideshow-container {
+    max-width: 1000px; /* Mengatur maksimal lebar */
+    position: relative; /* Menetapkan posisi relatif */
+    margin: auto; /* Mengatur margin otomatis untuk sentralisasi */
+}
+
+/* Mengatur gaya untuk elemen dengan class .numbertext */
+.numbertext {
+    color: black; /* Mengatur warna teks */
+    font-size: 12px; /* Mengatur ukuran font */
+    padding: 8px 12px; /* Mengatur padding */
+    position: absolute; /* Menetapkan posisi absolut */
+    top: 0; /* Menetapkan posisi di bagian atas */
+}
+
+/* Mengatur gaya untuk elemen dengan class .prev dan .next */
+.prev,
+.next {
+    cursor: pointer; /* Mengatur kursor menjadi pointer */
+    position: absolute; /* Menetapkan posisi absolut */
+    top: 45%; /* Menetapkan posisi vertikal */
+    width: auto; /* Mengatur lebar otomatis */
+    padding: 16px; /* Mengatur padding */
+    margin-top: -22px; /* Mengatur margin atas */
+    color: black; /* Mengatur warna teks */
+    font-weight: bold; /* Mengatur ketebalan font */
+    font-size: 18px; /* Mengatur ukuran font */
+    transition: 0.6s ease; /* Mengatur transisi */
+    border-radius: 0 3px 3px 0; /* Mengatur border radius */
+    user-select: none; /* Menonaktifkan seleksi teks */
+}
+
+.next {
+    right: 0; /* Menetapkan posisi di sebelah kanan */
+    border-radius: 3px 0 0 3px; /* Mengatur border radius */
+}
+
+/* Mengubah latar belakang saat hover */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Mengatur warna latar belakang */
+}
+
+/* Mengatur gaya untuk elemen dengan class .fade */
+.fade {
+    animation-name: fade; /* Mengatur nama animasi */
+    animation-duration: 1.5s; /* Mengatur durasi animasi */
+}
+
+/* Mengatur keyframes untuk animasi fade */
+@keyframes fade {
+    from {
+        opacity: 0.4; /* Mengatur opacity awal */
+    }
+    to {
+        opacity: 1; /* Mengatur opacity akhir */
+    }
+}
+
+/* Mengatur gaya untuk elemen dengan class .content-right */
+.content-right {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    gap: 2.5rem; /* Mengatur jarak antar item */
+    width: 425%;
+}
+
+/* Mengatur gaya untuk elemen dengan class .buy-now */
+.buy-now {
+    font-weight: 800; /* Mengatur ketebalan font */
+    color: white; /* Mengatur warna teks */
+}
+
+/* Menambahkan animasi saat hover untuk elemen dengan class .buy-now */
+.buy-now:hover {
+    animation: shake 0.5s; /* Mengatur animasi shake */
+}
+
+/* Mengatur keyframes untuk animasi shake */
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+/* Mengatur lebar untuk elemen dengan class .content-left */
+.content-left {
+    width: 170%; /* Mengatur lebar */
+}
+
+/* Mengatur gaya untuk elemen dengan class .fotosepatu-wrapper */
+.fotosepatu-wrapper {
+    width: 100%; /* Mengatur lebar penuh */
+    display: none; /* Menyembunyikan elemen secara default */
+}
+
+/* Mengatur gaya untuk elemen dengan class .fotosepatubawah-wrapper */
+.fotosepatubawah-wrapper {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: row; /* Mengatur arah flex menjadi baris */
+    gap: 0.8rem; /* Mengatur jarak antar item */
+    padding-top: 1rem; /* Mengatur padding atas */
+    width: auto;
+}
+
+.product-description {
+    text-align: justify;
+}
+
+/* Mengatur gaya untuk elemen dengan class .fotosepatubawah */
+.fotosepatubawah {
+    cursor: pointer; /* Mengatur kursor menjadi pointer */
+    transition: background-color 0.6s; /* Mengatur transisi untuk background-color */
+    width: 31%; /* Mengatur lebar */
+}
+
+/* Mengatur gaya untuk elemen aktif dan saat hover pada class .fotosepatubawah */
+.active,
+.fotosepatubawah:hover {
+    background-color: grey; /* Mengatur warna latar belakang */
+    border-radius: 5%; /* Mengatur border radius */
+}
+
+/* Mengatur gaya untuk elemen dengan class .fotosepatu */
+.fotosepatu {
+    width: 100%; /* Mengatur lebar penuh */
+    vertical-align: middle; /* Menyelaraskan secara vertikal */
+}
+
+/* Mengatur gaya untuk elemen dengan class .list */
+.list {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: row; /* Mengatur arah flex menjadi baris */
+    gap: 4rem; /* Mengatur jarak antar item */
+    padding-top: 1rem; /* Mengatur padding atas */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Mengatur gaya untuk elemen dengan class .list-left */
+.list-left {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    gap: 1rem; /* Mengatur jarak antar item */
+}
+
+/* Mengatur gaya untuk elemen dengan class .list-right */
+.list-right {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    gap: 1rem; /* Mengatur jarak antar item */
+}
+
+/* Mengatur gaya untuk elemen dengan class .button-beli */
+.button-beli {
+    background-color: #b99470; /* Mengatur warna latar belakang */
+    text-align: center; /* Mengatur teks agar rata tengah */
+    padding: 1rem 0; /* Mengatur padding */
+    border-radius: 10px; /* Mengatur border radius */
+    cursor: pointer; /* Mengatur kursor menjadi pointer */
+}
+
+/* Mengatur gaya untuk elemen dengan class .shoes-content */
+.shoes-content {
+    margin-top: 3rem; /* Mengatur margin atas */
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+}
+
+/* Mengatur gaya untuk elemen dengan class .shoes-other */
+.shoes-other {
+    display: flex;
+    justify-content: center;
+}
+
+/* Mengatur gaya untuk elemen dengan class .shoes-case */
+.shoes-case {
+    display: flex; /* Mengatur display menjadi flexbox */
+    flex-direction: row; /* Mengatur arah flex menjadi baris */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+    gap: 2rem; /* Mengatur jarak antar item */
+}
+
+/* Mengatur gaya untuk elemen dengan class .case */
+.case {
+    border: 1px solid whitesmoke; /* Mengatur border */
+    padding: 0.8rem; /* Mengatur padding */
+    border-radius: 1rem; /* Mengatur border radius */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Mengatur bayangan */
+    transition: 0.3s; /* Mengatur transisi */
+    cursor: pointer; /* Mengatur kursor menjadi pointer */
+}
+
+/* Mengatur bayangan saat hover pada elemen dengan class .case */
+.case:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Mengatur bayangan */
+}
+
+/* Mengatur teks agar rata tengah untuk elemen dengan class .maybe-missed */
+.maybe-missed {
+    text-align: center; /* Mengatur teks agar rata tengah */
+    margin: 1rem 0; /* Mengatur margin atas dan bawah */
+}
+
+/* Mengatur margin atas untuk elemen dengan class .gender-tag */
+.gender-tag {
+    margin-top: 2rem;
+}
+
+/* Mengatur border radius untuk elemen dengan class .case-img */
+.case-img {
+    border-radius: 1rem; /* Mengatur border radius */
+}
+
+/* Mengatur gaya untuk elemen dengan class .product */
+.product {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+/* Mengatur gaya untuk elemen dengan class .qout */
+.quot {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px 25px 0px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Mengatur font-family untuk elemen dengan class .quotes */
+.quotes {
+    font-family: "Koulen", sans-serif; /* Mengatur font-family */
+}

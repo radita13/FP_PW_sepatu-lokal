@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+:root {
+    /* Warna font */
+    --font1--: #ffffff;
+    --font2--: #2f1c19;
+    --font3--: #000000;
+    --font4--: #9ca3af;
+    /* Warna latar belakang */
+    --primary--: #b99470;
+    --secondary--: #ffffff;
+    --tertiary--: #2f1c19;
+    --kuarterner--: #000000;
+    --half--: #ababab;
+}
+
+.bg-back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.back-logo {
+    display: flex;
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+    align-items: center;
+    cursor: auto;
+}
+
+.back-button {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--font3--);
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: none;
+    width: auto;
+}
+
+.back-button:hover {
+    background-color: transparent;
+}
+
+.back-logo img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.header-logo img {
+    width: 70px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    height: auto;
+}
+
+.register,
+.image-signup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 600px;
+}
+
+.register {
+    background-color: #b99470;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reg-judul {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+label[for="username"],
+label[for="email"],
+label[for="phone_number"],
+label[for="pass"] {
+    margin-bottom: 2px;
+}
+
+input[placeholder] {
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone_number"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.image-signup {
+    background-color: #b99470;
+    width: 50%;
+    max-width: 600px;
+}
+
+.image-signup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.costume-button {
+    display: flex;
+    margin-top: 30px;
+}
+
+button {
+    padding: 13px;
+    width: 100%;
+    background-color: #2f1c19;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.2s ease-in-out;
+    font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+    background-color: rgb(55 65 81);
+}
+
+.signup {
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.signup-page {
+    color: rgb(36, 36, 36);
+    font-family: "Poppins", sans-serif;
+}
+
+.signup a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    transition: 0.1s ease-in-out;
+}
+
+.signup a:hover {
+    color: #ffffff;
+}
+
+.user,
+.email,
+.phone_number,
+.pass {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user .invalid-feedback,
+.email .invalid-feedback,
+.pass .invalid-feedback {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: red;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1200px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        overflow: scroll;
+    }
+    .container {
+        margin: 50px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register,
+    .image-signup {
+        width: 100%;
+        max-width: 500px; /* Pertahankan max-width */
+    }
+    .image-signup {
+        order: 1;
+    }
+    .register {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        overflow: auto;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin: 20px;
+        padding: 10px;
+    }
+    .image-signup {
+        order: 1;
+        margin-top: 20px;
+    }
+    .register {
+        order: 2;
+        width: 100%;
+        max-width: 500px; /* Pertahankan max-width */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        overflow: auto;
+    }
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    input {
+        padding: 8px;
+    }
+    .back-logo {
+        justify-content: space-between;
+    }
+    .register {
+        padding: 10px;
+        width: 100%;
+        max-width: 500px; /* Pertahankan max-width */
+    }
+    .costume-button {
+        margin-top: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 278px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 199px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 134px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        max-width: 50px;
+    }
+}
